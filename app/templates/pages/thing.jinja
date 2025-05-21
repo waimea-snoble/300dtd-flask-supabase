@@ -1,7 +1,7 @@
 {% extends 'pages/base.jinja' %}
 
 {% block title %}
-    Flask Demo
+    Flask and Supabase Demo - single thing
 {% endblock %}
 
 {% block content %}
@@ -10,8 +10,6 @@
     </section>
 
     <section id="things">
-    
-        {% for thing in things %}
 
             <article>
             
@@ -25,16 +23,11 @@
                 Description {{ thing["description"] }}
 
                 <footer>
-                    <a href="/thing/{{ thing['id'] }}">More...</a>
-
-                    <a href="/delete/{{ thing['id'] }}">Delete</a>
+                    <a href="">Delete</a>
                 </footer>
             
             
             </article>
-
-
-        {% endfor %}
 
     </section>
 {% endblock %}
